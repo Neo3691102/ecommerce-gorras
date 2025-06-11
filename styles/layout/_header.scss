@@ -7,24 +7,36 @@
     display: flex;
     justify-content: space-between;
 
+    &__menu{
+        margin: pxArem(30);
+        cursor: pointer;
+        svg{
+            &:hover{
+            fill: #cfcbcb;
+            }
+        }
+        
+    }
+
     &__logo{
         img{
             width: pxArem(90);
             height: pxArem(60);
-            margin: 20px;
+            margin: pxArem(20) pxArem(20) pxArem(20) pxArem(20);
         }
+        
     }
 
-    &__links{
-        list-style: none;
+    &__cartlogo{
         display: flex;
         align-items: center;
         gap: pxArem(15);
-        margin-right: pxArem(27);
-        
-        a{
-            text-decoration: none;
-            color: #fff;
+        margin-right: pxArem(39);
+        cursor: pointer;
+        svg{
+            &:hover{
+                fill: #cfcbcb;
+            }
         }
     }
 }
