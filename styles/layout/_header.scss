@@ -10,28 +10,45 @@
     &__menu{
         margin: pxArem(30);
         cursor: pointer;
-        svg{
-            &:hover{
-            fill: #cfcbcb;
+        display: none;
+        
+    }
+
+    &__links{
+        ul{
+            color: white;
+            position: relative;
+            top: pxArem(45);
+            left: pxArem(150);
+            display: flex;
+            list-style: none;
+            gap: pxArem(42);
+            cursor: pointer;
+            li{
+                &:hover{
+                text-decoration: underline;
+            }
             }
         }
         
+
     }
 
     &__logo{
         img{
             width: pxArem(90);
             height: pxArem(60);
-            margin: pxArem(20) pxArem(20) pxArem(20) pxArem(20);
+            position: relative;
+            top: pxArem(20);
+            right: pxArem(60);
         }
         
     }
 
     &__cartlogo{
-        display: flex;
-        align-items: center;
-        gap: pxArem(15);
-        margin-right: pxArem(39);
+        position: relative;
+        top: pxArem(30);
+        right: pxArem(150);
         cursor: pointer;
         svg{
             &:hover{
