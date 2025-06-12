@@ -10,20 +10,32 @@
 .navbar__menu {
   margin: 1.875rem;
   cursor: pointer;
+  display: none;
 }
-.navbar__menu svg:hover {
-  fill: #cfcbcb;
+.navbar__links ul {
+  color: white;
+  position: relative;
+  top: 2.8125rem;
+  left: 9.375rem;
+  display: flex;
+  list-style: none;
+  gap: 2.625rem;
+  cursor: pointer;
+}
+.navbar__links ul li:hover {
+  text-decoration: underline;
 }
 .navbar__logo img {
   width: 5.625rem;
   height: 3.75rem;
-  margin: 1.25rem 1.25rem 1.25rem 1.25rem;
+  position: relative;
+  top: 1.25rem;
+  right: 3.75rem;
 }
 .navbar__cartlogo {
-  display: flex;
-  align-items: center;
-  gap: 0.9375rem;
-  margin-right: 2.4375rem;
+  position: relative;
+  top: 1.875rem;
+  right: 9.375rem;
   cursor: pointer;
 }
 .navbar__cartlogo svg:hover {
