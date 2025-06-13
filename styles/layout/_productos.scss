@@ -28,7 +28,7 @@
         margin: 0 auto;
         .producto{
             background: linear-gradient(90deg, #242323 25%, #5f5e5e 50%, #242323);
-            width: pxArem(240);
+            width: pxArem(180);
             height: pxArem(300);
             border-radius: pxArem(9);
             cursor: pointer;
@@ -42,6 +42,7 @@
                 text-align: center;
                 padding: pxArem(12) 0 pxArem(12) 0;
                 color: white;
+                font-size: pxArem(18);
             }
             p{
                 text-align: center;

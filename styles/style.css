@@ -96,7 +96,7 @@
 }
 .productos__container .producto {
   background: linear-gradient(90deg, #242323 25%, #5f5e5e 50%, #242323);
-  width: 15rem;
+  width: 11.25rem;
   height: 18.75rem;
   border-radius: 0.5625rem;
   cursor: pointer;
@@ -110,6 +110,7 @@
   text-align: center;
   padding: 0.75rem 0 0.75rem 0;
   color: white;
+  font-size: 1.125rem;
 }
 .productos__container .producto p {
   text-align: center;
