@@ -88,7 +88,7 @@
 .productos__container {
   padding: 1.5rem 0 1.5rem 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(11.25rem, 1fr));
   -moz-column-gap: 1.75rem;
        column-gap: 1.75rem;
   row-gap: 1.75rem;
