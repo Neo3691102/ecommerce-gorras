@@ -21,7 +21,7 @@
         padding: pxArem(24) 0 pxArem(24) 0;
         
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(pxArem(180), 1fr)); //minimo 180px, maximo 1fr
         column-gap: pxArem(28);
         row-gap: pxArem(28);
         width: 78%;
