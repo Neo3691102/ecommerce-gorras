@@ -136,6 +136,34 @@
   border: 0.1875rem solid #e49d06;
 }
 
+.footer__container {
+  position: relative;
+  top: 6.25rem;
+  background: linear-gradient(90deg, #242323 25%, #5f5e5e 50%, #242323);
+}
+.footer__container img {
+  width: 5.625rem;
+  height: 3.75rem;
+  display: block;
+  margin: 0 auto;
+}
+.footer__container h3 {
+  color: white;
+  font-size: 1.6875rem;
+  text-align: center;
+}
+.footer__container p {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.footer__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 * {
   margin: 0;
   padding: 0;

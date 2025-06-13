@@ -1,0 +1,29 @@
+
+    .footer__container{
+        position: relative;
+        top: pxArem(100);
+        background: linear-gradient(90deg, #242323 25%, #5f5e5e 50%, #242323);
+        img{
+            width: pxArem(90);
+            height: pxArem(60);
+            display: block;
+            margin: 0 auto;
+        }
+        h3{
+            color: white;
+            font-size: pxArem(27);
+            text-align: center;
+        }
+        p{
+            color: white;
+            font-size: pxArem(24);
+            text-align: center;
+        }
+        
+    }
+
+    .footer__icons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
