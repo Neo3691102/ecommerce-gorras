@@ -8,16 +8,19 @@
             height: pxArem(60);
             display: block;
             margin: 0 auto;
+            
         }
         h3{
             color: white;
-            font-size: pxArem(27);
+            font-size: pxArem(24);
             text-align: center;
+            margin: pxArem(15) 0;
         }
         p{
             color: white;
-            font-size: pxArem(24);
+            font-size: pxArem(18);
             text-align: center;
+            margin: pxArem(15) 0;
         }
         
     }
@@ -25,5 +28,13 @@
     .footer__icons{
             display: flex;
             justify-content: center;
+            gap: pxArem(21);
             align-items: center;
+            margin: pxArem(15) 0;
+            svg{
+                cursor: pointer;
+                &:hover{
+                    fill:#1d1c1c;
+                }
+            }
         }

@@ -149,19 +149,29 @@
 }
 .footer__container h3 {
   color: white;
-  font-size: 1.6875rem;
+  font-size: 1.5rem;
   text-align: center;
+  margin: 0.9375rem 0;
 }
 .footer__container p {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.125rem;
   text-align: center;
+  margin: 0.9375rem 0;
 }
 
 .footer__icons {
   display: flex;
   justify-content: center;
+  gap: 1.3125rem;
   align-items: center;
+  margin: 0.9375rem 0;
+}
+.footer__icons svg {
+  cursor: pointer;
+}
+.footer__icons svg:hover {
+  fill: #1d1c1c;
 }
 
 * {
