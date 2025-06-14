@@ -5,10 +5,11 @@
     text-align: center;
     background-color: white;
     position: fixed;
-    right: 0;
+    right: pxArem(-300);
     top: pxArem(100);
     box-shadow: 0 0 pxArem(10) rgba(0, 0, 0, 0.1);
     border-radius: pxArem(6);
+    transition: transform 0.3s ease-in-out;
     #closecart{
         position: absolute;
         top: pxArem(15);
@@ -30,4 +31,9 @@
             margin: pxArem(12) auto;
         }
     }
+}
+
+.visible{
+    display: block;
+    transform: translateX(pxArem(-300));
 }

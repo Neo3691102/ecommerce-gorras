@@ -181,10 +181,11 @@
   text-align: center;
   background-color: white;
   position: fixed;
-  right: 0;
+  right: -18.75rem;
   top: 6.25rem;
   box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
   border-radius: 0.375rem;
+  transition: transform 0.3s ease-in-out;
 }
 .cart #closecart {
   position: absolute;
@@ -206,6 +207,11 @@
 }
 .cart__container p {
   margin: 0.75rem auto;
+}
+
+.visible {
+  display: block;
+  transform: translateX(-18.75rem);
 }
 
 * {
