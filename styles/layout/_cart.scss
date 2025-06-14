@@ -1,0 +1,33 @@
+.cart{
+    width: pxArem(300);
+    height: 80%;
+    padding: pxArem(15);
+    text-align: center;
+    background-color: white;
+    position: fixed;
+    right: 0;
+    top: pxArem(100);
+    box-shadow: 0 0 pxArem(10) rgba(0, 0, 0, 0.1);
+    border-radius: pxArem(6);
+    #closecart{
+        position: absolute;
+        top: pxArem(15);
+        right: pxArem(15);
+        &:hover{
+            cursor:pointer;
+            fill: red;
+        }
+    }
+    h2{
+        margin-bottom: pxArem(12);
+    }
+    &__container{
+       height: pxArem(300);
+        overflow-y: scroll;
+        padding: pxArem(15);
+        background-color: yellow;
+        p{
+            margin: pxArem(12) auto;
+        }
+    }
+}
