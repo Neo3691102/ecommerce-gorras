@@ -29,7 +29,7 @@
         .producto{
             background: linear-gradient(90deg, #242323 25%, #5f5e5e 50%, #242323);
             width: pxArem(180);
-            height: pxArem(300);
+            height: pxArem(350);
             border-radius: pxArem(9);
             cursor: pointer;
             img{
@@ -50,6 +50,24 @@
                 font-size: pxArem(21);
                 color: white;
             }
+            .productos__counter{
+                width: 80%;
+                display: flex;
+                justify-content: space-around;
+                margin: 0 auto;
+                .counterminus{
+                    width: pxArem(30);
+                    height: pxArem(30);
+                }
+                .cantidad{
+                    font-size: pxArem(18);
+                    margin: pxArem(3);
+                }
+                .counterplus{
+                    width: pxArem(30);
+                    height: pxArem(30);
+                }
+            }
             button{
                 display: block;
                 text-align: center;
@@ -62,6 +80,7 @@
                 border: pxArem(2) solid #794617;
                 border-radius: pxArem(9);
                 font-size: pxArem(15);
+                cursor: pointer;
                 &:hover{
                     border: pxArem(3) solid #e49d06;
                 }

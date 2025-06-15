@@ -42,6 +42,9 @@
 .navbar__cartlogo svg:hover {
   fill: #cfcbcb;
 }
+.navbar__cartlogo .hidden {
+  display: none;
+}
 
 .whatsapp {
   background: linear-gradient(90deg, #242323 25%, #5f5e5e 50%, #242323);
@@ -98,7 +101,7 @@
 .productos__container .producto {
   background: linear-gradient(90deg, #242323 25%, #5f5e5e 50%, #242323);
   width: 11.25rem;
-  height: 18.75rem;
+  height: 21.875rem;
   border-radius: 0.5625rem;
   cursor: pointer;
 }
@@ -119,6 +122,24 @@
   font-size: 1.3125rem;
   color: white;
 }
+.productos__container .producto .productos__counter {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+.productos__container .producto .productos__counter .counterminus {
+  width: 1.875rem;
+  height: 1.875rem;
+}
+.productos__container .producto .productos__counter .cantidad {
+  font-size: 1.125rem;
+  margin: 0.1875rem;
+}
+.productos__container .producto .productos__counter .counterplus {
+  width: 1.875rem;
+  height: 1.875rem;
+}
 .productos__container .producto button {
   display: block;
   text-align: center;
@@ -131,6 +152,7 @@
   border: 0.125rem solid #794617;
   border-radius: 0.5625rem;
   font-size: 0.9375rem;
+  cursor: pointer;
 }
 .productos__container .producto button:hover {
   border: 0.1875rem solid #e49d06;
@@ -207,6 +229,43 @@
 }
 .cart__container p {
   margin: 0.75rem auto;
+}
+.cart .productReview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 18px;
+}
+.cart .productReview img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.cart .productReview p {
+  font-size: 15px;
+  font-weight: 500;
+}
+.cart .productReview h3 {
+  font-size: 15px;
+  font-weight: 500;
+}
+.cart .total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.25rem 1.5rem;
+}
+.cart .total p {
+  font-weight: 600;
+}
+.cart .pagobutton {
+  width: 100%;
+  height: 2.625rem;
+  color: white;
+  background-color: black;
+  border-radius: 0.5625rem;
+  cursor: pointer;
+  font-size: 1.125rem;
 }
 
 .visible {
