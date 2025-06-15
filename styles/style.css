@@ -42,8 +42,18 @@
 .navbar__cartlogo svg:hover {
   fill: #cfcbcb;
 }
-.navbar__cartlogo .hidden {
-  display: none;
+.navbar__cartlogo .numItems {
+  color: #fff;
+  background-color: red;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: clamp(0.5rem, 0.8vw, 1rem);
+  font-weight: 600;
+  position: absolute;
+  top: 0.125rem;
+  right: -0.25rem;
 }
 
 .whatsapp {
