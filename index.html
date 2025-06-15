@@ -36,7 +36,8 @@
         </a>
 
         <div class="navbar__cartlogo">
-          <svg id="carticon"
+          <svg
+            id="carticon"
             width="40"
             height="40"
             fill="white"
@@ -49,6 +50,7 @@
               d="M10.5 18a1.5 1.5 0 1 0 0 3 1.5 1.5 0 1 0 0-3M17.5 18a1.5 1.5 0 1 0 0 3 1.5 1.5 0 1 0 0-3M8.82 15.77c.31.75 1.04 1.23 1.85 1.23h6.18c.79 0 1.51-.47 1.83-1.2l3.24-7.4c.14-.31.11-.67-.08-.95S21.34 7 21 7H7.33L5.92 3.62C5.76 3.25 5.4 3 5 3H2v2h2.33zM19.47 9l-2.62 6h-6.18l-2.5-6z"
             />
           </svg>
+          <p class="hidden" id="numberOfItems">0</p>
         </div>
       </nav>
     </header>
@@ -87,6 +89,11 @@
             <img src="assets/img/hatsproyecto/1.jpg" alt="gorra angelinos 1" />
             <h3>Angels</h3>
             <p>$ 350.00</p>
+            <div class="productos__counter">
+              <button class="counterminus" id="counterminusp1">-</button>
+              <p id="cantidadp1" class="cantidad">0</p>
+              <button class="counterplus" id="counterplusp1">+</button>
+            </div>
             <button id="btn-p1">Agregar al carrito</button>
           </div>
 
@@ -282,7 +289,8 @@
       </section>
 
       <section id="cartsection" class="cart">
-        <svg id="closecart"
+        <svg
+          id="closecart"
           width="24"
           height="24"
           fill="currentColor"
@@ -301,9 +309,15 @@
 
         <h2>Cart</h2>
 
-        <div class="cart__container">
+        <div id="productcontainer" class="cart__container">
           <p>No hay objetos en tu carrito</p>
         </div>
+
+        <div class="total">
+          <p>Total: MXN</p>
+          <p id="total"> 0.00</p>
+        </div>
+        <button class="pagobutton">Proceder al pago</button>
       </section>
     </main>
     <footer>
