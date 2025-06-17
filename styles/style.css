@@ -235,16 +235,17 @@
   height: 18.75rem;
   overflow-y: scroll;
   padding: 0.9375rem;
-  background-color: yellow;
+  font-weight: 600;
 }
 .cart__container p {
   margin: 0.75rem auto;
 }
 .cart .productReview {
   display: flex;
-  justify-content: space-between;
+  gap: 1.125rem;
+  justify-content: space-evenly;
   align-items: center;
-  padding: 0 18px;
+  padding: 0 9px;
 }
 .cart .productReview img {
   width: 30px;
