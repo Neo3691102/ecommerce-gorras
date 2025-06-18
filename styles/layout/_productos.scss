@@ -86,6 +86,9 @@
                 }
             }
         }
+        @media(max-width: pxArem(480)){
+            width: 50%;
+        }
     }
     
 }
