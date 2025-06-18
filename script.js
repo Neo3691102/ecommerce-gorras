@@ -127,6 +127,54 @@ const productos = [
     precio: 350,
     src: "assets/img/hatsproyecto/20.jpg",
   },
+  {
+    id: 21,
+    nombre: "LA K/B",
+    precio: 350,
+    src: "assets/img/hatsproyecto/21.jpg",
+  },
+  {
+    id: 22,
+    nombre: "NY B/B",
+    precio: 350,
+    src: "assets/img/hatsproyecto/22.jpg",
+  },
+  {
+    id: 23,
+    nombre: "LA B/B",
+    precio: 350,
+    src: "assets/img/hatsproyecto/23.jpg",
+  },
+  {
+    id: 24,
+    nombre: "LA K/Stars",
+    precio: 350,
+    src: "assets/img/hatsproyecto/24.jpg",
+  },
+  {
+    id: 25,
+    nombre: "Braves",
+    precio: 350,
+    src: "assets/img/hatsproyecto/25.jpeg",
+  },
+  {
+    id: 26,
+    nombre: "NY Brown",
+    precio: 350,
+    src: "assets/img/hatsproyecto/26.jpg",
+  },
+  {
+    id: 27,
+    nombre: "NY W/B",
+    precio: 350,
+    src: "assets/img/hatsproyecto/27.jpg",
+  },
+  {
+    id: 28,
+    nombre: "LA W/B",
+    precio: 350,
+    src: "assets/img/hatsproyecto/28.jpg",
+  },
 ];
 
 const arrayCarrito = [];
@@ -151,6 +199,14 @@ const btnp17 = document.getElementById("btn-p17");
 const btnp18 = document.getElementById("btn-p18");
 const btnp19 = document.getElementById("btn-p19");
 const btnp20 = document.getElementById("btn-p20");
+const btnp21 = document.getElementById("btn-p21");
+const btnp22 = document.getElementById("btn-p22");
+const btnp23 = document.getElementById("btn-p23");
+const btnp24 = document.getElementById("btn-p24");
+const btnp25 = document.getElementById("btn-p25");
+const btnp26 = document.getElementById("btn-p26");
+const btnp27 = document.getElementById("btn-p27");
+const btnp28 = document.getElementById("btn-p28");
 
 
 const btnminusp1 = document.getElementById("counterminusp1");
@@ -232,6 +288,38 @@ const btnplusp19 = document.getElementById("counterplusp19");
 const btnminusp20 = document.getElementById("counterminusp20");
 const cantidadp20 = document.getElementById("cantidadp20");
 const btnplusp20 = document.getElementById("counterplusp20");
+
+const btnminusp21 = document.getElementById("counterminusp21");
+const cantidadp21 = document.getElementById("cantidadp21");
+const btnplusp21 = document.getElementById("counterplusp21");
+
+const btnminusp22 = document.getElementById("counterminusp22");
+const cantidadp22 = document.getElementById("cantidadp22");
+const btnplusp22 = document.getElementById("counterplusp22");
+
+const btnminusp23 = document.getElementById("counterminusp23");
+const cantidadp23 = document.getElementById("cantidadp23");
+const btnplusp23 = document.getElementById("counterplusp23");
+
+const btnminusp24 = document.getElementById("counterminusp24");
+const cantidadp24 = document.getElementById("cantidadp24");
+const btnplusp24 = document.getElementById("counterplusp24");
+
+const btnminusp25 = document.getElementById("counterminusp25");
+const cantidadp25 = document.getElementById("cantidadp25");
+const btnplusp25 = document.getElementById("counterplusp25");
+
+const btnminusp26 = document.getElementById("counterminusp26");
+const cantidadp26 = document.getElementById("cantidadp26");
+const btnplusp26 = document.getElementById("counterplusp26");
+
+const btnminusp27 = document.getElementById("counterminusp27");
+const cantidadp27 = document.getElementById("cantidadp27");
+const btnplusp27 = document.getElementById("counterplusp27");
+
+const btnminusp28 = document.getElementById("counterminusp28");
+const cantidadp28 = document.getElementById("cantidadp28");
+const btnplusp28 = document.getElementById("counterplusp28");
 
 const nItems = document.getElementById("numberOfItems");
 
@@ -626,6 +714,157 @@ btnp20.addEventListener("click", () => {
   cantidadp20.textContent = "0";
 });
 
+btnp21.addEventListener("click", () => {
+  const idItem = 21;
+  const d21 = document.createElement("div");
+  d21.classList.add("productReview");
+
+  const cantidad = parseInt(cantidadp21.textContent);
+  if (cantidad === 0) {
+    alert("Por favor, selecciona una cantidad mayor a 0");
+    return;
+  } else {
+    
+
+    crearElementoDivCarrito(idItem, cantidad, d21);
+  }
+  console.log("parte final del evento");
+  alert("Producto agregado al carrito");
+  cantidadp21.textContent = "0";
+});
+
+btnp22.addEventListener("click", () => {
+  const idItem = 22;
+  const d22 = document.createElement("div");
+  d22.classList.add("productReview");
+
+  const cantidad = parseInt(cantidadp22.textContent);
+  if (cantidad === 0) {
+    alert("Por favor, selecciona una cantidad mayor a 0");
+    return;
+  } else {
+    
+
+    crearElementoDivCarrito(idItem, cantidad, d22);
+  }
+  console.log("parte final del evento");
+  alert("Producto agregado al carrito");
+  cantidadp22.textContent = "0";
+});
+
+btnp23.addEventListener("click", () => {
+  const idItem = 23;
+  const d23 = document.createElement("div");
+  d23.classList.add("productReview");
+
+  const cantidad = parseInt(cantidadp23.textContent);
+  if (cantidad === 0) {
+    alert("Por favor, selecciona una cantidad mayor a 0");
+    return;
+  } else {
+    
+
+    crearElementoDivCarrito(idItem, cantidad, d23);
+  }
+  console.log("parte final del evento");
+  alert("Producto agregado al carrito");
+  cantidadp23.textContent = "0";
+});
+
+btnp24.addEventListener("click", () => {
+  const idItem = 24;
+  const d24 = document.createElement("div");
+  d24.classList.add("productReview");
+
+  const cantidad = parseInt(cantidadp24.textContent);
+  if (cantidad === 0) {
+    alert("Por favor, selecciona una cantidad mayor a 0");
+    return;
+  } else {
+    
+
+    crearElementoDivCarrito(idItem, cantidad, d24);
+  }
+  console.log("parte final del evento");
+  alert("Producto agregado al carrito");
+  cantidadp24.textContent = "0";
+});
+
+btnp25.addEventListener("click", () => {
+  const idItem = 25;
+  const d25 = document.createElement("div");
+  d25.classList.add("productReview");
+
+  const cantidad = parseInt(cantidadp25.textContent);
+  if (cantidad === 0) {
+    alert("Por favor, selecciona una cantidad mayor a 0");
+    return;
+  } else {
+    
+
+    crearElementoDivCarrito(idItem, cantidad, d25);
+  }
+  console.log("parte final del evento");
+  alert("Producto agregado al carrito");
+  cantidadp25.textContent = "0";
+});
+
+btnp26.addEventListener("click", () => {
+  const idItem = 26;
+  const d26 = document.createElement("div");
+  d26.classList.add("productReview");
+
+  const cantidad = parseInt(cantidadp26.textContent);
+  if (cantidad === 0) {
+    alert("Por favor, selecciona una cantidad mayor a 0");
+    return;
+  } else {
+    
+
+    crearElementoDivCarrito(idItem, cantidad, d26);
+  }
+  console.log("parte final del evento");
+  alert("Producto agregado al carrito");
+  cantidadp26.textContent = "0";
+});
+
+btnp27.addEventListener("click", () => {
+  const idItem = 27;
+  const d27 = document.createElement("div");
+  d27.classList.add("productReview");
+
+  const cantidad = parseInt(cantidadp27.textContent);
+  if (cantidad === 0) {
+    alert("Por favor, selecciona una cantidad mayor a 0");
+    return;
+  } else {
+    
+
+    crearElementoDivCarrito(idItem, cantidad, d27);
+  }
+  console.log("parte final del evento");
+  alert("Producto agregado al carrito");
+  cantidadp27.textContent = "0";
+});
+
+btnp28.addEventListener("click", () => {
+  const idItem = 28;
+  const d28 = document.createElement("div");
+  d28.classList.add("productReview");
+
+  const cantidad = parseInt(cantidadp28.textContent);
+  if (cantidad === 0) {
+    alert("Por favor, selecciona una cantidad mayor a 0");
+    return;
+  } else {
+    
+
+    crearElementoDivCarrito(idItem, cantidad, d28);
+  }
+  console.log("parte final del evento");
+  alert("Producto agregado al carrito");
+  cantidadp28.textContent = "0";
+});
 //Eventos para aumentar y disminuir cantidad de productos
 btnminusp1.addEventListener("click", () => {
   if (cantidadp1.textContent === "0") {
@@ -847,8 +1086,106 @@ btnminusp20.addEventListener("click", () => {
 });
 
 btnplusp20.addEventListener("click", () => {
-  cantidadp20.textContent = parseInt(cantidadp20.textContent) + 1;
+  cantidadp21.textContent = parseInt(cantidadp21.textContent) + 1;
 });
+
+btnminusp21.addEventListener("click", () => {
+  if (cantidadp21.textContent === "0") {
+    cantidadp21.textContent = "0";
+  } else {
+    cantidadp21.textContent = parseInt(cantidadp21.textContent) - 1;
+  }
+});
+
+btnplusp21.addEventListener("click", () => {
+  cantidadp21.textContent = parseInt(cantidadp21.textContent) + 1;
+});
+
+btnminusp22.addEventListener("click", () => {
+  if (cantidadp22.textContent === "0") {
+    cantidadp22.textContent = "0";
+  } else {
+    cantidadp22.textContent = parseInt(cantidadp21.textContent) - 1;
+  }
+});
+
+btnplusp22.addEventListener("click", () => {
+  cantidadp22.textContent = parseInt(cantidadp22.textContent) + 1;
+});
+
+btnminusp23.addEventListener("click", () => {
+  if (cantidadp23.textContent === "0") {
+    cantidadp23.textContent = "0";
+  } else {
+    cantidadp23.textContent = parseInt(cantidadp23.textContent) - 1;
+  }
+});
+
+btnplusp23.addEventListener("click", () => {
+  cantidadp23.textContent = parseInt(cantidadp23.textContent) + 1;
+});
+
+btnminusp24.addEventListener("click", () => {
+  if (cantidadp24.textContent === "0") {
+    cantidadp24.textContent = "0";
+  } else {
+    cantidadp24.textContent = parseInt(cantidadp24.textContent) - 1;
+  }
+});
+
+btnplusp24.addEventListener("click", () => {
+  cantidadp24.textContent = parseInt(cantidadp24.textContent) + 1;
+});
+
+btnminusp25.addEventListener("click", () => {
+  if (cantidadp25.textContent === "0") {
+    cantidadp25.textContent = "0";
+  } else {
+    cantidadp25.textContent = parseInt(cantidadp25.textContent) - 1;
+  }
+});
+
+btnplusp25.addEventListener("click", () => {
+  cantidadp25.textContent = parseInt(cantidadp25.textContent) + 1;
+});
+
+btnminusp26.addEventListener("click", () => {
+  if (cantidadp26.textContent === "0") {
+    cantidadp26.textContent = "0";
+  } else {
+    cantidadp26.textContent = parseInt(cantidadp26.textContent) - 1;
+  }
+});
+
+btnplusp26.addEventListener("click", () => {
+  cantidadp26.textContent = parseInt(cantidadp26.textContent) + 1;
+});
+
+btnminusp27.addEventListener("click", () => {
+  if (cantidadp27.textContent === "0") {
+    cantidadp27.textContent = "0";
+  } else {
+    cantidadp27.textContent = parseInt(cantidadp27.textContent) - 1;
+  }
+});
+
+btnplusp27.addEventListener("click", () => {
+  cantidadp27.textContent = parseInt(cantidadp27.textContent) + 1;
+});
+
+btnminusp28.addEventListener("click", () => {
+  if (cantidadp28.textContent === "0") {
+    cantidadp28.textContent = "0";
+  } else {
+    cantidadp28.textContent = parseInt(cantidadp28.textContent) - 1;
+  }
+});
+
+btnplusp28.addEventListener("click", () => {
+  cantidadp28.textContent = parseInt(cantidadp28.textContent) + 1;
+});
+
+
 
 //metodo para crear el elemento del carrito
 const crearElementoDivCarrito = (idItem, cantidad, div) => {

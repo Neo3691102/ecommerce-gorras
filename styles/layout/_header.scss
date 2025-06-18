@@ -26,6 +26,17 @@
             gap: pxArem(42);
             cursor: pointer;
             li{
+                a{
+                    text-decoration: none;
+                    &:active{
+                        color: #cfcbcb;
+                        text-decoration: none;
+                    }
+                    &:visited{
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
                 &:hover{
                 text-decoration: underline;
             }
