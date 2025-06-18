@@ -10,6 +10,7 @@
     box-shadow: 0 0 pxArem(10) rgba(0, 0, 0, 0.1);
     border-radius: pxArem(6);
     transition: transform 0.3s ease-in-out;
+    z-index: 3;
     #closecart{
         position: absolute;
         top: pxArem(15);
