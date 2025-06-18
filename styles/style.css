@@ -25,6 +25,7 @@
 }
 .navbar__links ul li a {
   text-decoration: none;
+  color: white;
 }
 .navbar__links ul li a:active {
   color: #cfcbcb;
