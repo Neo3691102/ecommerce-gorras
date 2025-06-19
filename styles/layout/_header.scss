@@ -12,7 +12,9 @@
         margin: pxArem(30);
         cursor: pointer;
         display: none;
-        
+        @media (max-width: 480px) {
+            display: block;
+        }
     }
 
     &__links{
@@ -50,11 +52,7 @@
             }
         }
         @media (max-width: 480px) {
-            ul{
-                left: pxArem(12);
-                font-size: pxArem(12);
-                gap: pxArem(12);
-            }
+            display: none;
         }
 
     }
@@ -72,10 +70,10 @@
         }
         @media(max-width: pxArem(480)){
             img{
-                width: pxArem(60);
-                height: pxArem(30);
-                top: pxArem(33);
-                right: pxArem(10);
+                width: pxArem(90);
+                height: pxArem(60);
+                top: pxArem(21);
+                right: pxArem(21);
             }
         }
     }
