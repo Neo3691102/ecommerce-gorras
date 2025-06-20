@@ -17,6 +17,35 @@
         }
     }
 
+    &__responsivelinks{
+        background-color: #25252B;
+        position: fixed;
+        top: pxArem(100);
+        left: 0;
+        width: pxArem(120);
+        height: pxArem(150);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        #closeresponsivemenu{
+        
+            z-index: 3;
+            position: fixed;
+            top: pxArem(98);
+            left: pxArem(98);
+        }
+        ul{
+            width: 100%;
+            margin-top: pxArem(23);
+            li{
+                color: white;
+                padding: pxArem(9);
+                background-color: #25252B;
+            }
+        }
+    }
+
     &__links{
         ul{
             color: white;

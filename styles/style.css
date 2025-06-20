@@ -18,6 +18,33 @@
     display: block;
   }
 }
+.navbar__responsivelinks {
+  background-color: #25252B;
+  position: fixed;
+  top: 6.25rem;
+  left: 0;
+  width: 7.5rem;
+  height: 9.375rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.navbar__responsivelinks #closeresponsivemenu {
+  z-index: 3;
+  position: fixed;
+  top: 6.125rem;
+  left: 6.125rem;
+}
+.navbar__responsivelinks ul {
+  width: 100%;
+  margin-top: 1.4375rem;
+}
+.navbar__responsivelinks ul li {
+  color: white;
+  padding: 0.5625rem;
+  background-color: #25252B;
+}
 .navbar__links ul {
   color: white;
   position: relative;
