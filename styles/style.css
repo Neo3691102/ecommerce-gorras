@@ -22,18 +22,19 @@
   background-color: #25252B;
   position: fixed;
   top: 6.25rem;
-  left: 0;
+  left: -7.5rem;
   width: 7.5rem;
   height: 9.375rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: transform ease-in-out 0.6s;
 }
 .navbar__responsivelinks #closeresponsivemenu {
   z-index: 3;
-  position: fixed;
-  top: 6.125rem;
+  position: absolute;
+  top: 0rem;
   left: 6.125rem;
 }
 .navbar__responsivelinks ul {
@@ -41,14 +42,23 @@
   margin-top: 1.4375rem;
 }
 .navbar__responsivelinks ul li {
+  cursor: pointer;
   color: white;
   padding: 0.5625rem;
   background-color: #25252B;
+}
+.navbar__responsivelinks ul li a {
+  color: white;
+  text-decoration: none;
 }
 .navbar__responsivelinks ul li:hover {
   background-color: white;
   color: black;
   font-weight: bold;
+}
+.navbar .active {
+  display: block;
+  transform: translateX(7.5rem);
 }
 .navbar__links ul {
   color: white;
