@@ -323,6 +323,19 @@ const btnplusp28 = document.getElementById("counterplusp28");
 
 const nItems = document.getElementById("numberOfItems");
 
+const iconoMenuResponsive = document.getElementById("iconoresponsive");
+const menuresponsive = document.getElementById("menuresponsive");
+const closeResponsiveMenu = document.getElementById("closeresponsivemenu");
+
+//eventos para abrir y cerrar el menu responsivo
+iconoMenuResponsive.addEventListener("click", () => {
+  menuresponsive.classList.add("active");
+})
+
+closeResponsiveMenu.addEventListener("click", () => {
+  menuresponsive.classList.remove("active");
+})
+
 //Eventos para abrir y cerrar el carrito
 cartIcon.addEventListener("click", () => {
   cart.classList.add("visible");

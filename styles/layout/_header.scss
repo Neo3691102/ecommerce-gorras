@@ -21,24 +21,31 @@
         background-color: #25252B;
         position: fixed;
         top: pxArem(100);
-        left: 0;
+        left: pxArem(-120);
         width: pxArem(120);
         height: pxArem(150);
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        transition: transform ease-in-out 0.6s;
         #closeresponsivemenu{
         
             z-index: 3;
-            position: fixed;
-            top: pxArem(98);
+            position: absolute;
+            top: pxArem(0);
             left: pxArem(98);
         }
         ul{
             width: 100%;
             margin-top: pxArem(23);
             li{
+                 a{
+                    color: white;
+                    text-decoration: none;
+                }
+                
+                cursor: pointer;
                 color: white;
                 padding: pxArem(9);
                 background-color: #25252B;
@@ -47,9 +54,17 @@
                     color: black;
                     font-weight: bold;
                 }
+               
             }
         }
     }
+
+    .active{
+        display: block;
+        transform: translateX(pxArem(120));
+    }
+
+   
 
     &__links{
         ul{
