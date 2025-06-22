@@ -133,6 +133,10 @@
         right: pxArem(150);
         cursor: pointer;
         svg{
+            @media (max-width: pxArem(420)){
+                width: pxArem(36);
+                height: pxArem(36);
+            }
             &:hover{
                 fill: #cfcbcb;
             }
@@ -155,7 +159,7 @@
         }
         @media(max-width: pxArem(480)){
             right: pxArem(18);
-            
+           
         }
     }
 }
