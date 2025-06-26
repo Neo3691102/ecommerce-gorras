@@ -2,6 +2,21 @@
   position: fixed;
   top: 0;
   z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.3125rem;
+  width: 100%;
+  height: 1.875rem;
+}
+.enviosgratis svg:first-child {
+  cursor: pointer;
+}
+.enviosgratis p {
+  color: white;
+}
+.enviosgratis svg:last-child {
+  cursor: pointer;
 }
 
 .navbar {
