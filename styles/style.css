@@ -1,30 +1,40 @@
-.enviosgratis {
+@charset "UTF-8";
+.enviosgratis__container {
+  background-color: #242323;
   position: fixed;
   top: 0;
   z-index: 4;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1.3125rem;
+  gap: 1.5rem;
   width: 100%;
-  height: 1.875rem;
+  height: 2.4375rem;
+  animation: marquee 10s linear infinite;
+  overflow: hidden;
 }
-.enviosgratis svg:first-child {
-  cursor: pointer;
+.enviosgratis__container img {
+  width: 1.3125rem;
 }
-.enviosgratis p {
+.enviosgratis__container p {
   color: white;
 }
-.enviosgratis svg:last-child {
-  cursor: pointer;
-}
 
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Mueve el párrafo completo (incluido su padding) hacia la izquierda */
+    transform: translateX(-100%);
+  }
+}
 .navbar {
   width: 100%;
   height: 100px;
   background: linear-gradient(90deg, #242323 25%, #5f5e5e 50%, #242323);
   position: fixed;
-  top: 0;
+  top: 2.4375rem;
   display: flex;
   z-index: 1;
   justify-content: space-between;
