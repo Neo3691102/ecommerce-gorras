@@ -1,4 +1,9 @@
 @charset "UTF-8";
+.enviosgratis {
+  width: 100%;
+  height: 2.4375rem;
+  background-color: #242323;
+}
 .enviosgratis__container {
   background-color: #242323;
   position: fixed;
@@ -10,7 +15,7 @@
   gap: 1.5rem;
   width: 100%;
   height: 2.4375rem;
-  animation: marquee 10s linear infinite;
+  animation: marquee 15s linear infinite;
   overflow: hidden;
 }
 .enviosgratis__container img {
@@ -18,11 +23,12 @@
 }
 .enviosgratis__container p {
   color: white;
+  font-weight: 600;
 }
 
 @keyframes marquee {
   0% {
-    transform: translateX(0);
+    transform: translateX(100%);
   }
   100% {
     /* Mueve el párrafo completo (incluido su padding) hacia la izquierda */
