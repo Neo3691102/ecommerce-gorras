@@ -177,6 +177,10 @@ const productos = [
   },
 ];
 
+const rutasCarrusel = ["assets/img/hatscarrusel/AngelsBPFront.jpg"];
+let indice = 0;
+const imagenCarrusel = document.getElementById("carruselHero");
+
 const arrayCarrito = [];
 
 const btnp1 = document.getElementById("btn-p1");
@@ -1262,3 +1266,14 @@ cartItems.addEventListener("click", (event) => {
     }
   }
 });
+
+//funcion para incrementar el indice del array rutasCarrusel
+const carruselHero = () => {
+ 
+  indice++;
+
+};
+
+setTimeout(() => {
+  carruselHero();
+}, 3000);
