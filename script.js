@@ -177,9 +177,7 @@ const productos = [
   },
 ];
 
-const rutasCarrusel = ["assets/img/hatscarrusel/AngelsBPFront.jpg"];
-let indice = 0;
-const imagenCarrusel = document.getElementById("carruselHero");
+
 
 const arrayCarrito = [];
 
@@ -1268,12 +1266,27 @@ cartItems.addEventListener("click", (event) => {
 });
 
 //funcion para incrementar el indice del array rutasCarrusel
-const carruselHero = () => {
- 
-  indice++;
 
+const rutasCarrusel = ["assets/img/hatscarrusel/NYFront.jpg","assets/img/hatscarrusel/AngelsBPFront.jpg", 
+  "assets/img/hatscarrusel/AngelsBRFront.jpg",
+  "assets/img/hatscarrusel/BjBrownFront.jpg",
+  "assets/img/hatscarrusel/LABKFront.jpg"
+];
+let indice = 0;
+const imagenCarrusel = document.getElementById("carruselHero");
+
+const carruselHero = () => {
+  
+  
+  imagenCarrusel.src = rutasCarrusel[indice];
+  console.log(imagenCarrusel.src)
+  //cambiar dependiendo del numero de gorras, queda pendiende poner el resto de src en array
+  if(indice >= 4 ){
+    indice = 0;
+  }
+  indice++;
 };
 
-setTimeout(() => {
-  carruselHero();
+setInterval(() => {
+  carruselHero(indice);
 }, 3000);
