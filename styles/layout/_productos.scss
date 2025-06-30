@@ -3,19 +3,7 @@
     position: relative;
     top: pxArem(100);
     background: linear-gradient(90deg, #242323 25%, #5f5e5e 50%, #242323);
-    &__titles{
-        width: 78%;
-        margin: 0 auto;
-        h1{
-        padding: pxArem(18) 0 pxArem(18) 0;
-        font-size: pxArem(29);
-        color: white;
-    }
-    p{
-        font-size: pxArem(20);
-        color: white;
-    }
-    }
+    
 
     &__container{
         padding: pxArem(24) 0 pxArem(24) 0;
