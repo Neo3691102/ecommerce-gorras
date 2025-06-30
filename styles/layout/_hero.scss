@@ -2,44 +2,18 @@
   width: 100%;
   height: pxArem(500);
   position: relative;
-  top: pxArem(100);
-  // Usamos flexbox para centrar fácilmente el contenedor de los títulos
+  top: pxArem(139);
   display: flex;
   justify-content: center;
   align-items: center;
-  // Un color de fondo para las áreas fuera del 90% de la imagen
-  background-color: #242323;
-
-  // El seudo-elemento ::before contendrá la imagen de fondo
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    // Hacemos que ocupe el 90% del ancho y esté centrado (5% de margen a cada lado)
-    left: 5%;
-    right: 5%;
-    bottom: 0;
-    
-    // 1. Capa de degradado semi-transparente para oscurecer la imagen y que el texto resalte.
-    // 2. La URL de tu imagen.
-    // Ambas se combinan en una sola propiedad. La primera capa es la que está más arriba.
-    background-image:  url("assets/img/hatscarrusel/NYFront.jpg");
-    
-    // Ajusta la imagen para que cubra todo el área del 90% sin deformarse
-    background-size: cover;
-    background-position: center;
-    // Asegura que el seudo-elemento esté detrás del texto
-    z-index: 1;
-  }
+  gap: pxArem(100);
+  background: linear-gradient(90deg, #242323 25%, #5f5e5e 50%, #242323);
+  margin: 0 auto;
+  padding: 0 pxArem(40);
+  
 
   &__titles {
-    width: 78%;
-    margin: 0 auto;
-    position: absolute;
-    top: pxArem(350); // Necesario para que el z-index funcione
-    text-align: center;
-    // Coloca el texto por encima del seudo-elemento ::before
-    z-index: 2;
+    
 
     h1 {
       padding: pxArem(18) 0;
@@ -53,10 +27,15 @@
     }
   }
 
-  // El carrusel puede ir aquí, pero no afecta al fondo
-  &__images {
-    #carruselHero {
-      // Estilos para tu carrusel
+  &__images{
+    width: pxArem(500);
+    height: pxArem(500);
+    img{
+      width: 100%;
+      height: pxArem(500);
+      
+    
     }
   }
+  
 }

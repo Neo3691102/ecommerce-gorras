@@ -2,15 +2,15 @@
     background: linear-gradient(90deg, #242323 25%, #5f5e5e 50%, #242323);
     width: 100%;
     height: pxArem(39);
-    position: relative; 
-    top: pxArem(100);
+    position: fixed; 
+    top: pxArem(139);
     display: flex;
     gap: pxArem(6);
     justify-content: center;
     align-items: center;
     border-top: pxArem(1) solid #5f5e5e;
     border-bottom: pxArem(1) solid #5f5e5e;
-    
+    z-index: 5;
     a{
         text-decoration: none;
         p{
