@@ -1,8 +1,8 @@
 .hero {
   width: 100%;
-  height: pxArem(500);
+  height: pxArem(460);
   position: relative;
-  top: pxArem(139);
+  top: pxArem(178);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,12 +28,12 @@
   }
 
   &__images{
-    width: pxArem(500);
-    height: pxArem(500);
+    width: pxArem(460);
+    height: pxArem(460);
     img{
       width: 100%;
-      height: pxArem(500);
-      
+      height: pxArem(460);
+      border-radius: pxArem(15);
     
     }
   }

@@ -215,9 +215,9 @@
 
 .hero {
   width: 100%;
-  height: 31.25rem;
+  height: 28.75rem;
   position: relative;
-  top: 8.6875rem;
+  top: 11.125rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -236,18 +236,19 @@
   color: white;
 }
 .hero__images {
-  width: 31.25rem;
-  height: 31.25rem;
+  width: 28.75rem;
+  height: 28.75rem;
 }
 .hero__images img {
   width: 100%;
-  height: 31.25rem;
+  height: 28.75rem;
+  border-radius: 0.9375rem;
 }
 
 .productos {
   width: 100%;
   position: relative;
-  top: 8.6875rem;
+  top: 11.125rem;
   background: linear-gradient(90deg, #242323 25%, #5f5e5e 50%, #242323);
 }
 .productos__container {
