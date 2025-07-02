@@ -1270,7 +1270,11 @@ cartItems.addEventListener("click", (event) => {
 const rutasCarrusel = ["assets/img/hatscarrusel/NYFront.jpg","assets/img/hatscarrusel/AngelsBPFront.jpg", 
   "assets/img/hatscarrusel/AngelsBRFront.jpg",
   "assets/img/hatscarrusel/BjBrownFront.jpg",
-  "assets/img/hatscarrusel/LABKFront.jpg"
+  "assets/img/hatscarrusel/LABKFront.jpg",
+  "assets/img/hatscarrusel/LABlackFront.jpg",
+  "assets/img/hatscarrusel/LAKBFront.jpg",
+  "assets/img/hatscarrusel/LAKBlackFront.jpg",
+  "assets/img/hatscarrusel/NYBBFront.jpg"
 ];
 let indice = 0;
 const imagenCarrusel = document.getElementById("carruselHero");
@@ -1289,4 +1293,4 @@ const carruselHero = () => {
 
 setInterval(() => {
   carruselHero(indice);
-}, 3000);
+}, 2000);
