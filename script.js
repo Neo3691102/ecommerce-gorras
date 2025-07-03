@@ -1274,19 +1274,19 @@ const rutasCarrusel = ["assets/img/hatscarrusel/NYFront.jpg","assets/img/hatscar
   "assets/img/hatscarrusel/LABlackFront.jpg",
   "assets/img/hatscarrusel/LAKBFront.jpg",
   "assets/img/hatscarrusel/LAKBlackFront.jpg",
-  "assets/img/hatscarrusel/NYBBFront.jpg"
+  "assets/img/hatscarrusel/NYBBFront.jpg",
+  "assets/img/hatscarrusel/SoxRoseFront.jpg"
 ];
 let indice = 0;
 const imagenCarrusel = document.getElementById("carruselHero");
 
 const carruselHero = () => {
-  
-  
   imagenCarrusel.src = rutasCarrusel[indice];
   console.log(imagenCarrusel.src)
   //cambiar dependiendo del numero de gorras, queda pendiende poner el resto de src en array
-  if(indice >= 4 ){
+  if(indice >= 9 ){
     indice = 0;
+    return;
   }
   indice++;
 };
