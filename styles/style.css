@@ -244,6 +244,7 @@
   height: 28.75rem;
   border-radius: 2.4375rem;
   padding: 1.25rem 0;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .productos {
