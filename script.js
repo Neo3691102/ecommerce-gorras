@@ -1284,16 +1284,16 @@ let indice = 0;
 const imagenCarrusel = document.getElementById("carruselHero");
 
 const carruselHero = () => {
-  imagenCarrusel.src = rutasCarrusel[indice];
-  console.log(imagenCarrusel.src)
-  //cambiar dependiendo del numero de gorras, queda pendiende poner el resto de src en array
-  if(indice >= 12 ){
-    indice = 0;
-    return;
-  }
-  indice++;
+  
+  imagenCarrusel.style.opacity = 0;
+
+  
+  setTimeout(() => {
+    indice = (indice + 1) % rutasCarrusel.length;
+    imagenCarrusel.src = rutasCarrusel[indice];
+    imagenCarrusel.style.opacity = 1;
+  }, 500); 
 };
 
-setInterval(() => {
-  carruselHero(indice);
-}, 2000);
+imagenCarrusel.src = rutasCarrusel[indice];
+setInterval(carruselHero, 2000);
