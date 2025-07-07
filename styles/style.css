@@ -45,7 +45,7 @@
   position: fixed;
   top: 2.4375rem;
   display: flex;
-  z-index: 1;
+  z-index: 9;
   justify-content: space-between;
 }
 .navbar__menu {
