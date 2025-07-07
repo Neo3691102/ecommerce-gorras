@@ -19,11 +19,26 @@
       padding: pxArem(18) 0;
       font-size: pxArem(29);
       color: white;
+      @media(max-width: pxArem(480)){
+        
+        position: absolute;
+        top: pxArem(-12);
+        left: pxArem(90);
+      }
     }
 
     p {
       font-size: pxArem(20);
       color: white;
+      @media(max-width: pxArem(480)){
+        position: absolute; 
+        top: pxArem(310);
+      }
+    }
+    @media(max-width: pxArem(480)){
+      
+      padding: pxArem(12);
+      text-align: center;
     }
   }
 
@@ -36,7 +51,18 @@
       border-radius: pxArem(39);
       padding: pxArem(20) 0;
       transition: opacity 0.5s ease-in-out;
+      @media (max-width: pxArem(480)){
+        position: absolute;
+        top: pxArem(33);
+        left: pxArem(24);
+        width: pxArem(270);
+        height: pxArem(270);
+      }
     }
+  }
+
+  @media (max-width: pxArem(480)){
+    padding: pxArem(20);
   }
   
 }
