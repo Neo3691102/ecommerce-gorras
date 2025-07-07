@@ -231,9 +231,28 @@
   font-size: 1.8125rem;
   color: white;
 }
+@media (max-width: 30rem) {
+  .hero__titles h1 {
+    position: absolute;
+    top: -0.75rem;
+    left: 5.625rem;
+  }
+}
 .hero__titles p {
   font-size: 1.25rem;
   color: white;
+}
+@media (max-width: 30rem) {
+  .hero__titles p {
+    position: absolute;
+    top: 19.375rem;
+  }
+}
+@media (max-width: 30rem) {
+  .hero__titles {
+    padding: 0.75rem;
+    text-align: center;
+  }
 }
 .hero__images {
   width: 28.75rem;
@@ -245,6 +264,20 @@
   border-radius: 2.4375rem;
   padding: 1.25rem 0;
   transition: opacity 0.5s ease-in-out;
+}
+@media (max-width: 30rem) {
+  .hero__images img {
+    position: absolute;
+    top: 2.0625rem;
+    left: 1.5rem;
+    width: 16.875rem;
+    height: 16.875rem;
+  }
+}
+@media (max-width: 30rem) {
+  .hero {
+    padding: 1.25rem;
+  }
 }
 
 .productos {
