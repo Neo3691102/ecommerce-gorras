@@ -28,6 +28,15 @@
   color: white;
   font-weight: 600;
 }
+@media (max-width: 30rem) {
+  .enviosgratis__container p {
+    white-space: wrap;
+    font-size: 0.75rem;
+    overflow: auto;
+    max-width: calc(100% - 1.5625rem);
+    direction: ltr;
+  }
+}
 
 @keyframes marquee {
   0% {

@@ -2,9 +2,9 @@
     position: fixed;
         top: 0;
         z-index: 4;
-    width: 100%;
-    height: pxArem(39);
-    background-color: #242323;
+        width: 100%;
+        height: pxArem(39);
+        background-color: #242323;
     
     &__container{
         background-color: #242323;
@@ -26,6 +26,14 @@
             p {
                 color: white;
                 font-weight: 600;
+                @media (max-width: pxArem(480)){
+                    
+                    white-space: wrap;
+                    font-size: pxArem(12); // ajusta según el diseño
+                    overflow: auto; // permite desplazamiento horizontal si es necesario
+                    max-width: calc(100% - pxArem(25)); // deja espacio para la imagen
+                    direction: ltr;
+                }
             }
     }
     
