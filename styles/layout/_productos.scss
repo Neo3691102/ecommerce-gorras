@@ -21,6 +21,9 @@
             border-radius: pxArem(9);
             cursor: pointer;
             position: relative;
+            display: flex;
+            flex-direction: column;
+            
             
             #leftarrow{
                 width: pxArem(24);
@@ -30,12 +33,14 @@
                 left: 0;
                 background-color: gray;
                 border-radius: 50%;
+                opacity: 0.7;
             }
-            img{
+            #hatimage{
                 width: 100%;
                 height: pxArem(180);
                 border-radius: pxArem(9) pxArem(9) 0 0;
-                
+                position: relative;
+                top: pxArem(-24);
             }
             #rightarrow{
                 width: pxArem(24);
@@ -45,6 +50,7 @@
                 right: 0;
                 background-color: gray;
                 border-radius: 50%;
+                opacity: 0.7;
             };
             h3{
                 text-align: center;
