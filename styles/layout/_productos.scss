@@ -20,12 +20,32 @@
             height: pxArem(350);
             border-radius: pxArem(9);
             cursor: pointer;
+            position: relative;
+            
+            #leftarrow{
+                width: pxArem(24);
+                height: pxArem(24);
+                position: relative;
+                top: pxArem(100);
+                left: 0;
+                background-color: gray;
+                border-radius: 50%;
+            }
             img{
                 width: 100%;
                 height: pxArem(180);
                 border-radius: pxArem(9) pxArem(9) 0 0;
                 
             }
+            #rightarrow{
+                width: pxArem(24);
+                height: pxArem(24);
+                position: absolute;
+                top: pxArem(100);
+                right: 0;
+                background-color: gray;
+                border-radius: 50%;
+            };
             h3{
                 text-align: center;
                 padding: pxArem(12) 0 pxArem(12) 0;
