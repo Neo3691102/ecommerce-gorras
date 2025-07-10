@@ -4,6 +4,11 @@
         top: pxArem(100);
         background: linear-gradient(90deg, #242323 25%, #5f5e5e 50%, #242323);
         padding: pxArem(16) 0;
+        height: pxArem(450);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         img{
             width: pxArem(90);
             height: pxArem(60);
