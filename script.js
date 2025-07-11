@@ -14,118 +14,10 @@ const productos = [
     src: "assets/img/hatsproyecto/1.jpg",
   },
   {
-    id: 2,
-    nombre: "Blue Jays",
-    precio: 350,
-    src: "assets/img/hatsproyecto/2.jpg",
-  },
-  {
-    id: 3,
-    nombre: "Dodgers",
-    precio: 350,
-    src: "assets/img/hatsproyecto/3.jpg",
-  },
-  {
-    id: 4,
-    nombre: "Yankees",
-    precio: 350,
-    src: "assets/img/hatsproyecto/4.jpg",
-  },
-  {
-    id: 5,
-    nombre: "LA Backwards",
-    precio: 350,
-    src: "assets/img/hatsproyecto/5.jpg",
-  },
-  {
-    id: 6,
-    nombre: "LA Stars",
-    precio: 350,
-    src: "assets/img/hatsproyecto/6.jpg",
-  },
-  {
-    id: 7,
-    nombre: "NY Stars",
-    precio: 350,
-    src: "assets/img/hatsproyecto/7.jpg",
-  },
-  {
-    id: 8,
-    nombre: "Sox",
-    precio: 350,
-    src: "assets/img/hatsproyecto/8.jpg",
-  },
-  {
-    id: 9,
-    nombre: "Giants",
-    precio: 350,
-    src: "assets/img/hatsproyecto/9.jpg",
-  },
-  {
-    id: 10,
-    nombre: "NY Gray",
-    precio: 350,
-    src: "assets/img/hatsproyecto/10.jpg",
-  },
-  {
-    id: 11,
-    nombre: "LA Gray",
-    precio: 350,
-    src: "assets/img/hatsproyecto/11.jpg",
-  },
-  {
-    id: 12,
-    nombre: "NY White",
-    precio: 350,
-    src: "assets/img/hatsproyecto/12.jpg",
-  },
-  {
-    id: 13,
-    nombre: "Angels White",
-    precio: 350,
-    src: "assets/img/hatsproyecto/13.jpg",
-  },
-  {
-    id: 14,
-    nombre: "LA K/B",
-    precio: 350,
-    src: "assets/img/hatsproyecto/14.jpeg",
-  },
-  {
-    id: 15,
-    nombre: "LA Kaki",
-    precio: 350,
-    src: "assets/img/hatsproyecto/15.jpg",
-  },
-  {
-    id: 16,
-    nombre: "LA W/B",
-    precio: 350,
-    src: "assets/img/hatsproyecto/16.jpg",
-  },
-  {
-    id: 17,
-    nombre: "NY R/B",
-    precio: 350,
-    src: "assets/img/hatsproyecto/17.jpg",
-  },
-  {
-    id: 18,
-    nombre: "LA R/B",
-    precio: 350,
-    src: "assets/img/hatsproyecto/18.jpg",
-  },
-  {
     id: 19,
     nombre: "LA K/B",
     precio: 350,
     src: "assets/img/hatsproyecto/19.jpg",
-  },
-  {
-    id: 20,
-    nombre: "NY K/B",
-    precio: 350,
-    src: "assets/img/hatsproyecto/20.jpg",
   },
   {
     id: 21,
@@ -138,43 +30,7 @@ const productos = [
     nombre: "NY B/B",
     precio: 350,
     src: "assets/img/hatsproyecto/22.jpg",
-  },
-  {
-    id: 23,
-    nombre: "LA B/B",
-    precio: 350,
-    src: "assets/img/hatsproyecto/23.jpg",
-  },
-  {
-    id: 24,
-    nombre: "LA K/Stars",
-    precio: 350,
-    src: "assets/img/hatsproyecto/24.jpg",
-  },
-  {
-    id: 25,
-    nombre: "Braves",
-    precio: 350,
-    src: "assets/img/hatsproyecto/25.jpeg",
-  },
-  {
-    id: 26,
-    nombre: "NY Brown",
-    precio: 350,
-    src: "assets/img/hatsproyecto/26.jpg",
-  },
-  {
-    id: 27,
-    nombre: "NY W/B",
-    precio: 350,
-    src: "assets/img/hatsproyecto/27.jpg",
-  },
-  {
-    id: 28,
-    nombre: "LA W/B",
-    precio: 350,
-    src: "assets/img/hatsproyecto/28.jpg",
-  },
+  }
 ];
 
 const arrayCarrito = [];
