@@ -329,7 +329,7 @@
 .productos__container .producto #leftarrow:hover {
   opacity: 1;
 }
-.productos__container .producto #hatimage {
+.productos__container .producto .hatimage {
   width: 100%;
   height: 11.25rem;
   border-radius: 0.5625rem 0.5625rem 0 0;
