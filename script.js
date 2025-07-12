@@ -30,7 +30,7 @@ const productos = [
     nombre: "NY B/B",
     precio: 350,
     src: "assets/img/hatsproyecto/22.jpg",
-  }
+  },
 ];
 
 const arrayCarrito = [];
@@ -40,8 +40,6 @@ const btnp19 = document.getElementById("btn-p19");
 const btnp21 = document.getElementById("btn-p21");
 const btnp22 = document.getElementById("btn-p22");
 
-
-
 const btnminusp1 = document.getElementById("counterminusp1");
 const cantidadp1 = document.getElementById("cantidadp1");
 const btnplusp1 = document.getElementById("counterplusp1");
@@ -50,7 +48,6 @@ const btnminusp19 = document.getElementById("counterminusp19");
 const cantidadp19 = document.getElementById("cantidadp19");
 const btnplusp19 = document.getElementById("counterplusp19");
 
-
 const btnminusp21 = document.getElementById("counterminusp21");
 const cantidadp21 = document.getElementById("cantidadp21");
 const btnplusp21 = document.getElementById("counterplusp21");
@@ -58,7 +55,6 @@ const btnplusp21 = document.getElementById("counterplusp21");
 const btnminusp22 = document.getElementById("counterminusp22");
 const cantidadp22 = document.getElementById("cantidadp22");
 const btnplusp22 = document.getElementById("counterplusp22");
-
 
 const nItems = document.getElementById("numberOfItems");
 
@@ -69,11 +65,11 @@ const closeResponsiveMenu = document.getElementById("closeresponsivemenu");
 //eventos para abrir y cerrar el menu responsivo
 iconoMenuResponsive.addEventListener("click", () => {
   menuresponsive.classList.add("active");
-})
+});
 
 closeResponsiveMenu.addEventListener("click", () => {
   menuresponsive.classList.remove("active");
-})
+});
 
 //Eventos para abrir y cerrar el carrito
 cartIcon.addEventListener("click", () => {
@@ -96,16 +92,12 @@ btnp1.addEventListener("click", () => {
     alert("Por favor, selecciona una cantidad mayor a 0");
     return;
   } else {
-    
-
     crearElementoDivCarrito(idItem, cantidad, d1);
   }
   console.log("parte final del evento");
   alert("Producto agregado al carrito");
   cantidadp1.textContent = "0";
 });
-
-
 
 btnp19.addEventListener("click", () => {
   const idItem = 19;
@@ -117,15 +109,12 @@ btnp19.addEventListener("click", () => {
     alert("Por favor, selecciona una cantidad mayor a 0");
     return;
   } else {
-    
-
     crearElementoDivCarrito(idItem, cantidad, d19);
   }
   console.log("parte final del evento");
   alert("Producto agregado al carrito");
   cantidadp19.textContent = "0";
 });
-
 
 btnp21.addEventListener("click", () => {
   const idItem = 21;
@@ -137,8 +126,6 @@ btnp21.addEventListener("click", () => {
     alert("Por favor, selecciona una cantidad mayor a 0");
     return;
   } else {
-    
-
     crearElementoDivCarrito(idItem, cantidad, d21);
   }
   console.log("parte final del evento");
@@ -156,15 +143,12 @@ btnp22.addEventListener("click", () => {
     alert("Por favor, selecciona una cantidad mayor a 0");
     return;
   } else {
-    
-
     crearElementoDivCarrito(idItem, cantidad, d22);
   }
   console.log("parte final del evento");
   alert("Producto agregado al carrito");
   cantidadp22.textContent = "0";
 });
-
 
 //Eventos para aumentar y disminuir cantidad de productos
 btnminusp1.addEventListener("click", () => {
@@ -178,7 +162,6 @@ btnplusp1.addEventListener("click", () => {
   cantidadp1.textContent = parseInt(cantidadp1.textContent) + 1;
 });
 
-
 btnminusp19.addEventListener("click", () => {
   if (cantidadp19.textContent === "0") {
     cantidadp19.textContent = "0";
@@ -190,8 +173,6 @@ btnminusp19.addEventListener("click", () => {
 btnplusp19.addEventListener("click", () => {
   cantidadp19.textContent = parseInt(cantidadp19.textContent) + 1;
 });
-
-
 
 btnminusp21.addEventListener("click", () => {
   if (cantidadp21.textContent === "0") {
@@ -217,15 +198,10 @@ btnplusp22.addEventListener("click", () => {
   cantidadp22.textContent = parseInt(cantidadp22.textContent) + 1;
 });
 
-
-
-
-
 //metodo para crear el elemento del carrito
 const crearElementoDivCarrito = (idItem, cantidad, div) => {
-
   let { nombre, precio, src } = productos.find(({ id }) => id === idItem);
-  
+
   precio = cantidad * precio;
 
   div.innerHTML = `
@@ -286,7 +262,9 @@ cartItems.addEventListener("click", (event) => {
 
 //funcion para incrementar el indice del array rutasCarrusel
 
-const rutasCarrusel = ["assets/img/hatscarrusel/NYFront.jpg","assets/img/hatscarrusel/AngelsBPFront.jpg", 
+const rutasCarrusel = [
+  "assets/img/hatscarrusel/NYFront.jpg",
+  "assets/img/hatscarrusel/AngelsBPFront.jpg",
   "assets/img/hatscarrusel/AngelsBRFront.jpg",
   "assets/img/hatscarrusel/BjBrownFront.jpg",
   "assets/img/hatscarrusel/LABKFront.jpg",
@@ -297,21 +275,19 @@ const rutasCarrusel = ["assets/img/hatscarrusel/NYFront.jpg","assets/img/hatscar
   "assets/img/hatscarrusel/SoxRoseFront.jpg",
   "assets/img/hatscarrusel/SFBrownFront.jpg",
   "assets/img/hatscarrusel/SFBlackFront.jpg",
-  "assets/img/hatscarrusel/NYRoseFrontVenta.jpg"
+  "assets/img/hatscarrusel/NYRoseFrontVenta.jpg",
 ];
 let indice = 0;
 const imagenCarrusel = document.getElementById("carruselHero");
 
 const carruselHero = () => {
-  
   imagenCarrusel.style.opacity = 0;
 
-  
   setTimeout(() => {
     indice = (indice + 1) % rutasCarrusel.length;
     imagenCarrusel.src = rutasCarrusel[indice];
     imagenCarrusel.style.opacity = 1;
-  }, 500); 
+  }, 500);
 };
 
 imagenCarrusel.src = rutasCarrusel[indice];
