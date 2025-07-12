@@ -292,3 +292,11 @@ const carruselHero = () => {
 
 imagenCarrusel.src = rutasCarrusel[indice];
 setInterval(carruselHero, 2000);
+
+//eventos para las left y right arrow para ver mas fotos de las gorras
+const leftArrow = document.getElementById("leftarrow");
+const imagenGorra = document.getElementById("hatimagep1");
+leftArrow.addEventListener("click", () => {
+  
+  imagenGorra.src = "assets/img/hatsproyecto/1/AngelsBPFront.jpg";
+});
