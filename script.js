@@ -296,7 +296,11 @@ setInterval(carruselHero, 2000);
 //eventos para las left y right arrow para ver mas fotos de las gorras
 const leftArrow = document.getElementById("leftarrow");
 const imagenGorra = document.getElementById("hatimagep1");
+const arrayG1 = ["assets/img/hatsproyecto/1/AngelsBPFront.jpg",
+   "assets/img/hatsproyecto/1/AngelsBPInside.jpg",
+  "assets/img/hatsproyecto/1/AngelsBPSide.jpg",
+"assets/img/hatsproyecto/1/AngelsBPSide2.jpg",
+"assets/img/hatsproyecto/1/AngelsBPBack.jpg"];
 leftArrow.addEventListener("click", () => {
-  
-  imagenGorra.src = "assets/img/hatsproyecto/1/AngelsBPFront.jpg";
+  imagenGorra.src = arrayG1[0];
 });
