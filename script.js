@@ -320,6 +320,8 @@ console.log(rutaRecortada);
     imagenGorra.src = `${servidor}/${arrayG1[4]}`; 
     console.log(imagenGorra.src)
   }else{
+    const rutaActual = imagenGorra.src;
+    console.log(rutaActual);
     imagenGorra.src = `${servidor}/${arrayG1[0]}`;
   }
   });
