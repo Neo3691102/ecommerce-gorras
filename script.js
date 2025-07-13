@@ -295,6 +295,7 @@ setInterval(carruselHero, 2000);
 
 //eventos para las left y right arrow para ver mas fotos de las gorras
 const leftArrow = document.getElementById("leftarrow");
+const rightArrow = document.getElementById("rightarrow");
 const imagenGorra = document.getElementById("hatimagep1");
 const arrayG1 = ["assets/img/hatsproyecto/1/AngelsBPFront.jpg",
    "assets/img/hatsproyecto/1/AngelsBPInside.jpg",
@@ -302,5 +303,28 @@ const arrayG1 = ["assets/img/hatsproyecto/1/AngelsBPFront.jpg",
 "assets/img/hatsproyecto/1/AngelsBPSide2.jpg",
 "assets/img/hatsproyecto/1/AngelsBPBack.jpg"];
 leftArrow.addEventListener("click", () => {
-  imagenGorra.src = arrayG1[0];
-});
+  const servidor = window.location.origin;
+
+  const ruta = imagenGorra.src.toString();
+
+// Encuentra la posición inicial de "assets"
+const inicio = ruta.indexOf("assets");
+
+// Recorta el string desde esa posición hasta el final
+const rutaRecortada = ruta.substring(inicio);
+
+console.log(rutaRecortada);
+
+  if(rutaRecortada === "assets/img/hatsproyecto/1.jpg") {
+    console.log(arrayG1[4]);
+    imagenGorra.src = `${servidor}/${arrayG1[4]}`; 
+    console.log(imagenGorra.src)
+  }else{
+    imagenGorra.src = `${servidor}/${arrayG1[0]}`;
+  }
+  });
+rightArrow.addEventListener("click", () => {
+  const currentIndex = arrayG1.indexOf(imagenGorra.src);
+  console.log(currentIndex);//-1 quiere decir que no se encuentra en el array
+
+})
