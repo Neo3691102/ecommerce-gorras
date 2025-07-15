@@ -304,27 +304,47 @@ const arrayG1 = ["assets/img/hatsproyecto/1/AngelsBPFront.jpg",
 "assets/img/hatsproyecto/1/AngelsBPBack.jpg"];
 leftArrow.addEventListener("click", () => {
   const servidor = window.location.origin;
-
   const ruta = imagenGorra.src.toString();
 
-// Encuentra la posición inicial de "assets"
-const inicio = ruta.indexOf("assets");
+  // Encuentra la posición inicial de "assets"
+  const inicio = ruta.indexOf("assets");
 
-// Recorta el string desde esa posición hasta el final
-const rutaRecortada = ruta.substring(inicio);
+  // Recorta el string desde esa posición hasta el final
+  const rutaRecortada = ruta.substring(inicio);
 
-console.log(rutaRecortada);
+  console.log(rutaRecortada);
 
-  if(rutaRecortada === "assets/img/hatsproyecto/1.jpg") {
-    console.log(arrayG1[4]);
-    imagenGorra.src = `${servidor}/${arrayG1[4]}`; 
-    console.log(imagenGorra.src)
-  }else{
-    const rutaActual = imagenGorra.src;
-    console.log(rutaActual);
-    imagenGorra.src = `${servidor}/${arrayG1[0]}`;
+  // Si la ruta contiene "undefined", se redirige a la imagen inicial
+  if (rutaRecortada.includes("undefined")) {
+    console.log("Ruta contiene undefined");
+    imagenGorra.src = `${servidor}/assets/img/hatsproyecto/1.jpg`;
+    return;
   }
-  });
+
+  if (rutaRecortada === "assets/img/hatsproyecto/1.jpg") {
+    imagenGorra.src = `${servidor}/${arrayG1[arrayG1.length - 1]}`;
+  } else {
+    const rutaActualRecortada = ruta.substring(ruta.indexOf("assets"));
+
+    if (arrayG1.includes(rutaActualRecortada)) {
+      console.log("entro al if de includes");
+
+      const indiceActual = arrayG1.indexOf(rutaActualRecortada);
+      const indiceAnterior = indiceActual - 1;
+
+      // Si no hay imagen anterior válida, ir a la primera
+      if (indiceAnterior < 0 || !arrayG1[indiceAnterior]) {
+        imagenGorra.src = `${servidor}/assets/img/hatsproyecto/1.jpg`;
+      } else {
+        imagenGorra.src = `${servidor}/${arrayG1[indiceAnterior]}`;
+      }
+
+      console.log(imagenGorra.src);
+    } else {
+      imagenGorra.src = `${servidor}/assets/img/hatsproyecto/1.jpg`;
+    }
+  }
+});
 rightArrow.addEventListener("click", () => {
   const currentIndex = arrayG1.indexOf(imagenGorra.src);
   console.log(currentIndex);//-1 quiere decir que no se encuentra en el array
