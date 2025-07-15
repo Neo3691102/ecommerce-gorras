@@ -316,13 +316,21 @@ const rutaRecortada = ruta.substring(inicio);
 console.log(rutaRecortada);
 
   if(rutaRecortada === "assets/img/hatsproyecto/1.jpg") {
-    console.log(arrayG1[4]);
-    imagenGorra.src = `${servidor}/${arrayG1[4]}`; 
-    console.log(imagenGorra.src)
+    imagenGorra.src = `${servidor}/${arrayG1[arrayG1.length - 1]}`; 
   }else{
     const rutaActual = imagenGorra.src;
     console.log(rutaActual);
-    imagenGorra.src = `${servidor}/${arrayG1[0]}`;
+    const rutaActualRecortada = rutaActual.substring(rutaActual.indexOf("assets")); 
+    if(arrayG1.includes(rutaActualRecortada)){
+      console.log("entro al if de includes");
+      
+      imagenGorra.src = `${servidor}/${arrayG1[arrayG1.indexOf(rutaActualRecortada) -1 ]}`;
+      console.log(imagenGorra.src);
+      
+    }else{
+      imagenGorra.src = `${servidor}/assets/img/hatsproyecto/1.jpg`;
+    }
+    
   }
   });
 rightArrow.addEventListener("click", () => {
