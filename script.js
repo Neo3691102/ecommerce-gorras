@@ -345,8 +345,43 @@ leftArrow.addEventListener("click", () => {
     }
   }
 });
+
+
 rightArrow.addEventListener("click", () => {
-  const currentIndex = arrayG1.indexOf(imagenGorra.src);
-  console.log(currentIndex);//-1 quiere decir que no se encuentra en el array
+    const servidor = window.location.origin;
+    const ruta = imagenGorra.src.toString();
+
+  // Encuentra la posición inicial de "assets"
+    const inicio = ruta.indexOf("assets");
+
+  // Recorta el string desde esa posición hasta el final
+    const rutaRecortada = ruta.substring(inicio);
+
+    console.log(rutaRecortada);
+
+
+  if (rutaRecortada === "assets/img/hatsproyecto/1.jpg") {
+    imagenGorra.src = `${servidor}/${arrayG1[0]}`;
+  } else {
+    const rutaActualRecortada = ruta.substring(ruta.indexOf("assets"));
+
+    if (arrayG1.includes(rutaActualRecortada)) {
+      console.log("entro al if de includes");
+
+      const indiceActual = arrayG1.indexOf(rutaActualRecortada);
+      const indiceAnterior = indiceActual + 1;
+
+      // Si no hay imagen anterior válida, ir a la primera
+      if (indiceAnterior < 0 || !arrayG1[indiceAnterior]) {
+        imagenGorra.src = `${servidor}/assets/img/hatsproyecto/1.jpg`;
+      } else {
+        imagenGorra.src = `${servidor}/${arrayG1[indiceAnterior]}`;
+      }
+
+      console.log(imagenGorra.src);
+    } else {
+      imagenGorra.src = `${servidor}/assets/img/hatsproyecto/1.jpg`;
+    }
+  }
 
 })
