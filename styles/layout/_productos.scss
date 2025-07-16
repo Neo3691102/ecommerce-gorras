@@ -25,7 +25,7 @@
             flex-direction: column;
             
             
-            #leftarrow{
+            .leftarrow{
                 width: pxArem(24);
                 height: pxArem(24);
                 position: relative;
@@ -46,7 +46,7 @@
                 position: relative;
                 top: pxArem(-24);
             }
-            #rightarrow{
+            .rightarrow{
                 width: pxArem(24);
                 height: pxArem(24);
                 position: absolute;
