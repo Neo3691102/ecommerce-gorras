@@ -294,15 +294,21 @@ imagenCarrusel.src = rutasCarrusel[indice];
 setInterval(carruselHero, 2000);
 
 //eventos para las left y right arrow para ver mas fotos de las gorras
-const leftArrow = document.getElementById("leftarrow");
-const rightArrow = document.getElementById("rightarrow");
+const leftArrow1 = document.getElementById("leftarrow1");
+const rightArrow1 = document.getElementById("rightarrow1");
+const leftArrow2 = document.getElementById("leftarrow2");
+const rightArrow2 = document.getElementById("rightarrow2");
+const leftArrow3 = document.getElementById("leftarrow3");
+const rightArrow3 = document.getElementById("rightarrow3");
+const leftArrow4 = document.getElementById("leftarrow4");
+const rightArrow4 = document.getElementById("rightarrow4");
 const imagenGorra = document.getElementById("hatimagep1");
 const arrayG1 = ["assets/img/hatsproyecto/1/AngelsBPFront.jpg",
    "assets/img/hatsproyecto/1/AngelsBPInside.jpg",
   "assets/img/hatsproyecto/1/AngelsBPSide.jpg",
 "assets/img/hatsproyecto/1/AngelsBPSide2.jpg",
 "assets/img/hatsproyecto/1/AngelsBPBack.jpg"];
-leftArrow.addEventListener("click", () => {
+leftArrow1.addEventListener("click", () => {
   const servidor = window.location.origin;
   const ruta = imagenGorra.src.toString();
 
@@ -347,7 +353,7 @@ leftArrow.addEventListener("click", () => {
 });
 
 
-rightArrow.addEventListener("click", () => {
+rightArrow1.addEventListener("click", () => {
     const servidor = window.location.origin;
     const ruta = imagenGorra.src.toString();
 
