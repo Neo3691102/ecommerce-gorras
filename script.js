@@ -303,11 +303,18 @@ const rightArrow3 = document.getElementById("rightarrow3");
 const leftArrow4 = document.getElementById("leftarrow4");
 const rightArrow4 = document.getElementById("rightarrow4");
 const imagenGorra = document.getElementById("hatimagep1");
+const imagenGorra2 = document.getElementById("hatimagep2");
 const arrayG1 = ["assets/img/hatsproyecto/1/AngelsBPFront.jpg",
    "assets/img/hatsproyecto/1/AngelsBPInside.jpg",
   "assets/img/hatsproyecto/1/AngelsBPSide.jpg",
 "assets/img/hatsproyecto/1/AngelsBPSide2.jpg",
 "assets/img/hatsproyecto/1/AngelsBPBack.jpg"];
+const arrayG2 = ["assets/img/hatsproyecto/2/LAKBlackFront.jpg",
+  "assets/img/hatsproyecto/2/LAKBlackInside.jpg",
+  "assets/img/hatsproyecto/2/LAKBlackSide.jpg",
+  "assets/img/hatsproyecto/2/LAKBlackSide2.jpg",
+  "assets/img/hatsproyecto/2/LAKBlackBack.jpg"
+];
 leftArrow1.addEventListener("click", () => {
   const servidor = window.location.origin;
   const ruta = imagenGorra.src.toString();
@@ -387,6 +394,90 @@ rightArrow1.addEventListener("click", () => {
       console.log(imagenGorra.src);
     } else {
       imagenGorra.src = `${servidor}/assets/img/hatsproyecto/1.jpg`;
+    }
+  }
+
+})
+
+leftArrow2.addEventListener("click", () => {
+  const servidor = window.location.origin;
+  const ruta = imagenGorra2.src.toString();
+
+  // Encuentra la posición inicial de "assets"
+  const inicio = ruta.indexOf("assets");
+
+  // Recorta el string desde esa posición hasta el final
+  const rutaRecortada = ruta.substring(inicio);
+
+  console.log(rutaRecortada);
+
+  // Si la ruta contiene "undefined", se redirige a la imagen inicial
+  if (rutaRecortada.includes("undefined")) {
+    console.log("Ruta contiene undefined");
+    imagenGorra2.src = `${servidor}/assets/img/hatsproyecto/19.jpg`;
+    return;
+  }
+
+  if (rutaRecortada === "assets/img/hatsproyecto/19.jpg") {
+    imagenGorra2.src = `${servidor}/${arrayG2[arrayG2.length - 1]}`;
+  } else {
+    const rutaActualRecortada = ruta.substring(ruta.indexOf("assets"));
+
+    if (arrayG2.includes(rutaActualRecortada)) {
+      console.log("entro al if de includes");
+
+      const indiceActual = arrayG2.indexOf(rutaActualRecortada);
+      const indiceAnterior = indiceActual - 1;
+
+      // Si no hay imagen anterior válida, ir a la primera
+      if (indiceAnterior < 0 || !arrayG2[indiceAnterior]) {
+        imagenGorra2.src = `${servidor}/assets/img/hatsproyecto/19.jpg`;
+      } else {
+        imagenGorra2.src = `${servidor}/${arrayG2[indiceAnterior]}`;
+      }
+
+      console.log(imagenGorra2.src);
+    } else {
+      imagenGorra2.src = `${servidor}/assets/img/hatsproyecto/19.jpg`;
+    }
+  }
+});
+
+
+rightArrow2.addEventListener("click", () => {
+    const servidor = window.location.origin;
+    const ruta = imagenGorra2.src.toString();
+
+  // Encuentra la posición inicial de "assets"
+    const inicio = ruta.indexOf("assets");
+
+  // Recorta el string desde esa posición hasta el final
+    const rutaRecortada = ruta.substring(inicio);
+
+    console.log(rutaRecortada);
+
+
+  if (rutaRecortada === "assets/img/hatsproyecto/19.jpg") {
+    imagenGorra2.src = `${servidor}/${arrayG2[0]}`;
+  } else {
+    const rutaActualRecortada = ruta.substring(ruta.indexOf("assets"));
+
+    if (arrayG2.includes(rutaActualRecortada)) {
+      console.log("entro al if de includes");
+
+      const indiceActual = arrayG2.indexOf(rutaActualRecortada);
+      const indiceAnterior = indiceActual + 1;
+
+      // Si no hay imagen anterior válida, ir a la primera
+      if (indiceAnterior < 0 || !arrayG2[indiceAnterior]) {
+        imagenGorra2.src = `${servidor}/assets/img/hatsproyecto/19.jpg`;
+      } else {
+        imagenGorra2.src = `${servidor}/${arrayG2[indiceAnterior]}`;
+      }
+
+      console.log(imagenGorra2.src);
+    } else {
+      imagenGorra2.src = `${servidor}/assets/img/hatsproyecto/19.jpg`;
     }
   }
 
