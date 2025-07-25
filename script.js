@@ -296,25 +296,39 @@ setInterval(carruselHero, 2000);
 //eventos para las left y right arrow para ver mas fotos de las gorras
 const leftArrow1 = document.getElementById("leftarrow1");
 const rightArrow1 = document.getElementById("rightarrow1");
+
 const leftArrow2 = document.getElementById("leftarrow2");
 const rightArrow2 = document.getElementById("rightarrow2");
+
 const leftArrow3 = document.getElementById("leftarrow3");
 const rightArrow3 = document.getElementById("rightarrow3");
+
 const leftArrow4 = document.getElementById("leftarrow4");
 const rightArrow4 = document.getElementById("rightarrow4");
+
 const imagenGorra = document.getElementById("hatimagep1");
 const imagenGorra2 = document.getElementById("hatimagep2");
+const imagenGorra3 = document.getElementById("hatimagep3");
+
 const arrayG1 = ["assets/img/hatsproyecto/1/AngelsBPFront.jpg",
    "assets/img/hatsproyecto/1/AngelsBPInside.jpg",
   "assets/img/hatsproyecto/1/AngelsBPSide.jpg",
 "assets/img/hatsproyecto/1/AngelsBPSide2.jpg",
 "assets/img/hatsproyecto/1/AngelsBPBack.jpg"];
+
 const arrayG2 = ["assets/img/hatsproyecto/2/LAKBlackFront.jpg",
   "assets/img/hatsproyecto/2/LAKBlackInside.jpg",
   "assets/img/hatsproyecto/2/LAKBlackSide.jpg",
   "assets/img/hatsproyecto/2/LAKBlackSide2.jpg",
   "assets/img/hatsproyecto/2/LAKBlackBack.jpg"
 ];
+
+const arrayG3 = ["assets/img/hatsproyecto/21.jpg",
+  "assets/img/hatsproyecto/3/LAKBInside.jpg",
+  "assets/img/hatsproyecto/3/LAKBSide.jpg" ,
+  "assets/img/hatsproyecto/3/LAKBSide2.jpg",
+  "assets/img/hatsproyecto/3/LAKBBack.jpg"
+]
 leftArrow1.addEventListener("click", () => {
   const servidor = window.location.origin;
   const ruta = imagenGorra.src.toString();
@@ -397,7 +411,7 @@ rightArrow1.addEventListener("click", () => {
     }
   }
 
-})
+});
 
 leftArrow2.addEventListener("click", () => {
   const servidor = window.location.origin;
@@ -481,4 +495,6 @@ rightArrow2.addEventListener("click", () => {
     }
   }
 
-})
+});
+
+
