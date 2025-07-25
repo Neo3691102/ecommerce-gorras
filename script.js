@@ -323,7 +323,7 @@ const arrayG2 = ["assets/img/hatsproyecto/2/LAKBlackFront.jpg",
   "assets/img/hatsproyecto/2/LAKBlackBack.jpg"
 ];
 
-const arrayG3 = ["assets/img/hatsproyecto/21.jpg",
+const arrayG3 = ["assets/img/hatsproyecto/3/LAKBFront.jpg",
   "assets/img/hatsproyecto/3/LAKBInside.jpg",
   "assets/img/hatsproyecto/3/LAKBSide.jpg" ,
   "assets/img/hatsproyecto/3/LAKBSide2.jpg",
@@ -492,6 +492,89 @@ rightArrow2.addEventListener("click", () => {
       console.log(imagenGorra2.src);
     } else {
       imagenGorra2.src = `${servidor}/assets/img/hatsproyecto/19.jpg`;
+    }
+  }
+
+});
+
+leftArrow3.addEventListener("click", () => {
+  const servidor = window.location.origin;
+  const ruta = imagenGorra3.src.toString();
+
+  // Encuentra la posición inicial de "assets"
+  const inicio = ruta.indexOf("assets");
+
+  // Recorta el string desde esa posición hasta el final
+  const rutaRecortada = ruta.substring(inicio);
+
+  console.log(rutaRecortada);
+
+  // Si la ruta contiene "undefined", se redirige a la imagen inicial
+  if (rutaRecortada.includes("undefined")) {
+    console.log("Ruta contiene undefined");
+    imagenGorra3.src = `${servidor}/assets/img/hatsproyecto/21.jpg`;
+    return;
+  }
+
+  if (rutaRecortada === "assets/img/hatsproyecto/21.jpg") {
+    imagenGorra3.src = `${servidor}/${arrayG3[arrayG3.length - 1]}`;
+  } else {
+    const rutaActualRecortada = ruta.substring(ruta.indexOf("assets"));
+
+    if (arrayG3.includes(rutaActualRecortada)) {
+      console.log("entro al if de includes");
+
+      const indiceActual = arrayG3.indexOf(rutaActualRecortada);
+      const indiceAnterior = indiceActual - 1;
+
+      // Si no hay imagen anterior válida, ir a la primera
+      if (indiceAnterior < 0 || !arrayG3[indiceAnterior]) {
+        imagenGorra3.src = `${servidor}/assets/img/hatsproyecto/21.jpg`;
+      } else {
+        imagenGorra3.src = `${servidor}/${arrayG3[indiceAnterior]}`;
+      }
+
+      console.log(imagenGorra3.src);
+    } else {
+      imagenGorra.src = `${servidor}/assets/img/hatsproyecto/21.jpg`;
+    }
+  }
+});
+
+rightArrow3.addEventListener("click", () => {
+    const servidor = window.location.origin;
+    const ruta = imagenGorra3.src.toString();
+
+  // Encuentra la posición inicial de "assets"
+    const inicio = ruta.indexOf("assets");
+
+  // Recorta el string desde esa posición hasta el final
+    const rutaRecortada = ruta.substring(inicio);
+
+    console.log(rutaRecortada);
+
+
+  if (rutaRecortada === "assets/img/hatsproyecto/21.jpg") {
+    imagenGorra3.src = `${servidor}/${arrayG3[0]}`;
+  } else {
+    const rutaActualRecortada = ruta.substring(ruta.indexOf("assets"));
+
+    if (arrayG3.includes(rutaActualRecortada)) {
+      console.log("entro al if de includes");
+
+      const indiceActual = arrayG3.indexOf(rutaActualRecortada);
+      const indiceAnterior = indiceActual + 1;
+
+      // Si no hay imagen anterior válida, ir a la primera
+      if (indiceAnterior < 0 || !arrayG3[indiceAnterior]) {
+        imagenGorra3.src = `${servidor}/assets/img/hatsproyecto/21.jpg`;
+      } else {
+        imagenGorra3.src = `${servidor}/${arrayG3[indiceAnterior]}`;
+      }
+
+      
+    } else {
+      imagenGorra3.src = `${servidor}/assets/img/hatsproyecto/21.jpg`;
     }
   }
 
