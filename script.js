@@ -589,4 +589,85 @@ rightArrow3.addEventListener("click", () => {
 
 });
 
+leftArrow4.addEventListener("click", () => {
+  const servidor = window.location.origin;
+  const ruta = imagenGorra4.src.toString();
 
+  // Encuentra la posición inicial de "assets"
+  const inicio = ruta.indexOf("assets");
+
+  // Recorta el string desde esa posición hasta el final
+  const rutaRecortada = ruta.substring(inicio);
+
+  console.log(rutaRecortada);
+
+  // Si la ruta contiene "undefined", se redirige a la imagen inicial
+  if (rutaRecortada.includes("undefined")) {
+    console.log("Ruta contiene undefined");
+    imagenGorra4.src = `${servidor}/assets/img/hatsproyecto/22.jpg`;
+    return;
+  }
+
+  if (rutaRecortada === "assets/img/hatsproyecto/22.jpg") {
+    imagenGorra4.src = `${servidor}/${arrayG4[arrayG4.length - 1]}`;
+  } else {
+    const rutaActualRecortada = ruta.substring(ruta.indexOf("assets"));
+
+    if (arrayG4.includes(rutaActualRecortada)) {
+      console.log("entro al if de includes");
+
+      const indiceActual = arrayG4.indexOf(rutaActualRecortada);
+      const indiceAnterior = indiceActual - 1;
+
+      // Si no hay imagen anterior válida, ir a la primera
+      if (indiceAnterior < 0 || !arrayG4[indiceAnterior]) {
+        imagenGorra4.src = `${servidor}/assets/img/hatsproyecto/22.jpg`;
+      } else {
+        imagenGorra4.src = `${servidor}/${arrayG4[indiceAnterior]}`;
+      }
+
+      console.log(imagenGorra4.src);
+    } else {
+      imagenGorra4.src = `${servidor}/assets/img/hatsproyecto/22.jpg`;
+    }
+  }
+});
+
+rightArrow4.addEventListener("click", () => {
+    const servidor = window.location.origin;
+    const ruta = imagenGorra4.src.toString();
+
+  // Encuentra la posición inicial de "assets"
+    const inicio = ruta.indexOf("assets");
+
+  // Recorta el string desde esa posición hasta el final
+    const rutaRecortada = ruta.substring(inicio);
+
+    console.log(rutaRecortada);
+
+
+  if (rutaRecortada === "assets/img/hatsproyecto/22.jpg") {
+    imagenGorra4.src = `${servidor}/${arrayG4[0]}`;
+  } else {
+    const rutaActualRecortada = ruta.substring(ruta.indexOf("assets"));
+
+    if (arrayG4.includes(rutaActualRecortada)) {
+      console.log("entro al if de includes");
+
+      const indiceActual = arrayG4.indexOf(rutaActualRecortada);
+      const indiceAnterior = indiceActual + 1;
+
+      // Si no hay imagen anterior válida, ir a la primera
+      if (indiceAnterior < 0 || !arrayG4[indiceAnterior]) {
+        imagenGorra4.src = `${servidor}/assets/img/hatsproyecto/22.jpg`;
+      } else {
+        imagenGorra4.src = `${servidor}/${arrayG4[indiceAnterior]}`;
+      }
+
+      
+    } else {
+      imagenGorra4.src = `${servidor}/assets/img/hatsproyecto/22.jpg`;
+    }
+  }
+
+});
