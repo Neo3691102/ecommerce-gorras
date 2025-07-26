@@ -309,6 +309,7 @@ const rightArrow4 = document.getElementById("rightarrow4");
 const imagenGorra = document.getElementById("hatimagep1");
 const imagenGorra2 = document.getElementById("hatimagep2");
 const imagenGorra3 = document.getElementById("hatimagep3");
+const imagenGorra4 = document.getElementById("hatimagep4");
 
 const arrayG1 = ["assets/img/hatsproyecto/1/AngelsBPFront.jpg",
    "assets/img/hatsproyecto/1/AngelsBPInside.jpg",
@@ -329,6 +330,14 @@ const arrayG3 = ["assets/img/hatsproyecto/3/LAKBFront.jpg",
   "assets/img/hatsproyecto/3/LAKBSide2.jpg",
   "assets/img/hatsproyecto/3/LAKBBack.jpg"
 ]
+
+const arrayG4 = ["assets/img/hatsproyecto/4/NYBBFront.jpg",
+  "assets/img/hatsproyecto/4/NYBBInside.jpg",
+  "assets/img/hatsproyecto/4/NYBBInside2.jpg",
+  "assets/img/hatsproyecto/4/NYBBSide.jpg",
+  "assets/img/hatsproyecto/4/NYBBSide2.jpg",
+    "assets/img/hatsproyecto/4/NYBBBack.jpg"];
+
 leftArrow1.addEventListener("click", () => {
   const servidor = window.location.origin;
   const ruta = imagenGorra.src.toString();
