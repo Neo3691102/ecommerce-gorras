@@ -37,6 +37,11 @@
     direction: ltr;
   }
 }
+@media (max-width: 30rem) {
+  .enviosgratis {
+    z-index: 10;
+  }
+}
 
 @keyframes marquee {
   0% {
@@ -220,6 +225,11 @@
 }
 .whatsapp a p:hover {
   color: rgb(102, 221, 102);
+}
+@media (max-width: 30rem) {
+  .whatsapp {
+    z-index: 12;
+  }
 }
 
 .hero {

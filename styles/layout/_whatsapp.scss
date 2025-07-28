@@ -20,5 +20,7 @@
         }
         }
     }
-    
+    @media(max-width: pxArem(480)){
+        z-index: 12;
+    }
 }
